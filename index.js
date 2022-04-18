@@ -42,12 +42,6 @@ function invokeAction({ action, id, name, email, phone }) {
   }
 }
 
-invokeAction(argv);
-
-// listContacts().then(console.log).catch(console.log);
-// getContactById("1").then(console.log).catch(console.log);
-// removeContact("1")
-//   .then(() => console.log("Done!"))
-//   .catch(console.log);
-
-// addContact("test", "test", "test");
+(async () => {
+  await invokeAction(argv);
+})();
